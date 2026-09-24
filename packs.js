@@ -1,0 +1,451 @@
+/**
+ * Yu-Gi-Oh! Master Saga Pack Opener
+ * Official Master Duel Secret Packs Database
+ *
+ * Adding Custom/Normal Cards to a Secret Pack:
+ * You can explicitly add any standard Yu-Gi-Oh! card to a pack's featured pool
+ * by adding an optional `cards` array containing its exact Card Name (string)
+ * or Card ID (number).
+ *
+ * Example:
+ * cosmic_ocean: {
+ *     name: "Treasures of the Cosmic Ocean",
+ *     description: "Umi, Water Support",
+ *     archetypes: ["Ice Jade", "White", "Ghoti"],
+ *     cards: ["Ash Blossom & Joyous Spring", 2314238] // Explicitly add Ash Blossom and a card ID to this pack!
+ * }
+ *
+ * Excluding Cards from a Specific Secret Pack:
+ * You can explicitly exclude any card from a specific secret pack's featured pool
+ * by adding an optional `exclude_cards` array containing its exact Card Name (string)
+ * or Card ID (number). This prevents the card from being pulled from the secret pack's
+ * featured slots, and pulling this card from other packs will not trigger the unlock of this pack.
+ *
+ * Example:
+ * cosmic_ocean: {
+ *     name: "Treasures of the Cosmic Ocean",
+ *     description: "Umi, Water Support",
+ *     archetypes: ["Icejade", "Ghoti"],
+ *     exclude_cards: ["Icejade Tremora", 99999999]
+ * }
+ */
+
+const SECRET_PACKS = {
+  cosmic_ocean: {
+    name: "Treasures of the Cosmic Ocean",
+    description: "Icejade, Ghoti, Fish Support",
+    archetypes: ["Icejade", "Ghoti"],
+    cards: [
+      "Surface",
+      "White Aura Bihamut",
+      "Moray of Avarice",
+      "The Most Distant, Deepest Depths",
+      "White Aura Dolphin",
+      "White Aura Whale",
+      "White Howling",
+      "Abyss Keeper",
+      "White Stingray",
+      "Minairuka",
+      "White Mirror",
+      "White Moray",
+      "Whitefish Salvage",
+    ],
+  },
+  supreme_strike: {
+    name: "Supreme Strike",
+    description: "Mathmech, Cyberse slop",
+    archetypes: ["Mathmech"],
+    cards: [
+      "DPH Gendamoore",
+      "Link Disciple",
+      "Pendransaction",
+      "RAM Clouder",
+      "Balancer Lord",
+      "ROM Cloudia",
+      "Grid Sweeper",
+      "Drastic Draw",
+      "Cyberse Wizard",
+      "Rebuildeer",
+      "Proxy Horse",
+      "Firewall Defenser",
+      "One-Time Passcode",
+      "Cynet Optimization",
+      "Link Devotee",
+      "Antialian",
+      "Storm Cipher",
+      "Cynet Crosswipe",
+      "Cynet Rollback",
+    ],
+  },
+  echo_chamber_nation: {
+    name: "Echo Chamber Nation",
+    description: "Dogmatika, Ritual Support",
+    archetypes: ["Dogmatika"],
+    cards: [
+      "The Fallen & the Virtuous",
+      "The Dragon that Devours the Dogma",
+      "Titaniklad the Ash Dragon",
+      "Herald of the Arc Light",
+      "Pre-Preparation of Rites",
+      "Yakusa, Lord of the Eight Thunders",
+      "Manju of the Ten Thousand Hands",
+      "fallen of albaz",
+      "Nadir Servant",
+    ],
+  },
+  alba_abyss: {
+    name: "Alba Abyss",
+    description: "Branded, Springans",
+    archetypes: ["Branded"],
+    cards: [
+      "fusion deployment",
+      "mirrorjade the iceblade dragon",
+      "Lubellion the searing dragon",
+      "Alba-lenatus the abyss dragon",
+      "Springans Merrymaker",
+      "Incredible ecclesia, the virtuous",
+      "the golden swordsoul",
+      "Albaz the ashen",
+      "Sprind the irondash Dragon",
+      "Tri-brigade Kitt",
+      "Albion the Shrouded dragon",
+      "Springans Kitt",
+      "Dogmatika Nation",
+      "Dogmatika Punishment",
+      "Dogmatika Encounter",
+      "Springans Call!",
+      "Springans Blast!",
+      "Dogmatikaturgy",
+    ],
+  },
+  supernatural_elements: {
+    name: "Supernatural Elements",
+    description: "Monarch, ElementSaber",
+    archetypes: ["Monarch", "Vassal", "Elemental Lord", "Elementsaber"],
+    cards: [
+      "Eidos the Underworld Squire",
+      "Elemental Training",
+      "Edea the Heavenly Squire",
+      "Tessera the Primal Squire",
+    ],
+    exclude_cards: [
+      "Mobius the Frost Monarch",
+      "Caius the Shadow Monarch",
+      "Raiza the Storm Monarch",
+      "Thestalos the Firestorm Monarch",
+      "Zaborg the Thunder Monarch",
+      "Angmarl the Fiendish Monarch",
+      "Thestalos the Shadowfire Monarch",
+      "Delg the Dark Monarch",
+      "Gravekeeper's Vassal",
+      "Escalation of the Monarchs",
+      "Escher the Frost Vassal",
+      "Emperor of the land and sea",
+      "Granmarg the Rock Monarch",
+    ],
+  },
+  world_cloaked_in_magical_power: {
+    name: "World Cloaked in Magical Power",
+    description: "Sacred Beasts Support, Yubel",
+    archetypes: [
+      "Sacred Beast",
+      "Yubel",
+      "Old Entity",
+      "Summoning Beast",
+      "Raviel",
+      "Armityle",
+    ],
+    cards: [
+      "Nightmare Throne",
+      "Samsara D Lotus",
+      "Nightmare Pain",
+      "Eternal Favorite",
+      "Gruesome Grave Squirmer",
+      "Geistgrinder Golem",
+      "Mature Chronicle",
+      "Elder Entity N'tss",
+      "Phantom of Chaos",
+      "Uria, Lord of Searing Flames",
+      "Hamon, Lord of Striking Thunder",
+      "Dark Beckoning Beast",
+      "Fallen Paradise",
+      "Cerulean Skyfire",
+      "Hyper Blaze",
+      "Phantasm Emperor Trilojig",
+      "The Wicked Dreadroot",
+      "The Wicked Eraser",
+      "Phantom Skyblaster",
+      "Divine Serpent Geh",
+      "Divine Evolution",
+      "Opening of the Spirit Gates",
+      "Outer Entity Nyarla",
+      "Mad Reloader",
+      "Grave Squirmer",
+      "Tragoedia",
+      "Chaos Core",
+      "Phantasmal Martyrs",
+      "The Seal of Orichalcos",
+      "Forbidden Trapezohedron",
+      "Dreamland",
+      "Dimension Fusion Destruction",
+      "Hate Buster",
+      "Forbidden Apocrypha",
+    ],
+  },
+  neo_space_comrades: {
+    name: "Neo Space Comrades",
+    description: "Elemental HERO",
+    archetypes: ["Neo-Spacian", "Neos", "Neo Space"],
+    cards: [
+      "Cross Keeper",
+      "Instant Contact",
+      "EN Wave",
+      "Battle of Sleeping Spirits",
+      "Over Fusion",
+      "Miracle Contact",
+      "Generation Next",
+      "Next",
+      "Convert Contact",
+      "Contact Out",
+      "Double Hero Attack",
+      "Contact Gate",
+      "Common Soul",
+      "Elemental HERO Neos Kluger",
+      "Common Soul",
+      "Common Soul",
+      "Common Soul",
+      "Common Soul",
+      "Common Soul",
+      "Common Soul",
+    ],
+  },
+  stardust_ties: {
+    name: "Stardust Ties",
+    description: "Stardust, Synchron",
+    archetypes: ["Stardust", "Synchron"],
+    cards: [
+      "Shooting Quasar Dragon",
+      "Cosmic Blazar Dragon",
+      "Tuning",
+      "Duel Link Dragon, the Duel Dragon",
+      "Shooting Star Dragon",
+      "Shooting Riser Dragon",
+      "Starlight Road",
+      "Jet Warrior",
+      "Righty Driver",
+      "Lefty Driver",
+      "Doppelwarrior",
+      "Cosmic FLare",
+      "Scarred Warrior",
+      "Gravity Warrior",
+      "Debris Dragon",
+      "Level Warrior",
+      "Sonic Warrior",
+      "Rush Warrior",
+      "Limit Overdrive",
+      "Starlight Junktion",
+      "Necroid Synchro",
+      "Synchro Chase",
+      "Shooting Star",
+      "Stardust Flash",
+      "Converging Wishes",
+    ],
+  },
+  pearlescent_cyber_dragons: {
+    name: "Pearlescent Cyber Dragons",
+    description: "Cyber Dragon",
+    archetypes: ["Cyber Dragon", "Cyberdark", "Chimeratech"],
+    cards: [
+      "Limiter Removal",
+      "Lightning Storm",
+      "Cyber Jormungardr",
+      "Heosvarog the mechanical Dawn",
+      "Evolution End Burst",
+      "Cyber End Dragon",
+      "Cyber Twin Dragon",
+      "Cyber Eternity Dragon",
+      "Power Bond",
+      "Overload Fusion",
+      "Cybernetic Fusion Support",
+      "",
+    ],
+  },
+  abyssal_underworld: {
+    name: "Abyssal Underworld",
+    description: "Zombie World, Shiranui",
+    archetypes: ["Zombie World", "Shiranui", "Mayakashi", "Doomking"],
+  },
+  dragonmaid_to_order: {
+    name: "Dragonmaid-to-Order",
+    description: "Dragonmaid",
+    archetypes: ["Dragonmaid"],
+  },
+  raging_thunder: {
+    name: "Raging Thunder",
+    description: "Thunder Dragon",
+    archetypes: ["Thunder Dragon"],
+  },
+  fiendish_plaything: {
+    name: "Fiendish Plaything",
+    description: "Frightfur, Fluffal, Edge Imp",
+    archetypes: ["Frightfur", "Fluffal", "Edge Imp"],
+  },
+  toon_kingdom: {
+    name: "Toon Kingdom",
+    description: "Toon",
+    archetypes: ["Toon"],
+  },
+  nebula_cyclone: {
+    name: "Nebula Cyclone",
+    description: "Galaxy-Eyes, Photon",
+    archetypes: ["Galaxy-Eyes", "Photon", "Tachyon", "Galaxy"],
+  },
+  shackles_of_smoldering_wrath: {
+    name: "Shackles of Smoldering Wrath",
+    description: "Unchained, Fiend Support",
+    archetypes: ["Unchained"],
+  },
+  space_insurrection: {
+    name: "Space Insurrection",
+    description: "Kozmo, Psychic/Machine",
+    archetypes: ["Kozmo"],
+  },
+  solfachord_harmonics: {
+    name: "Solfachord Harmonics",
+    description: "Solfachord, Pendulum",
+    archetypes: ["Solfachord"],
+  },
+  one_turn_kill: {
+    name: "One-Turn-Kill",
+    description: "Numeron, OTK Cards",
+    archetypes: ["Numeron"],
+  },
+  clash_of_ruins: {
+    name: "Clash of Ruins",
+    description: "Ancient Gear, Machina",
+    archetypes: ["Ancient Gear", "Machina"],
+  },
+
+  a_dance_dedicated_to_the_Heavens: {
+    name: "A Dance Dedicated to the Heavens",
+    description: "Mikanko, Guardian, Equip Support",
+    archetypes: ["Mikanko", "Bamboo Sword"],
+    cards: [
+      "Hidden Armory",
+      "Armory Call",
+      "Celestial Sword - Eatos",
+      "Guardian Eatos",
+      "Guardian Dreadscythe",
+      "Power of the Guardians",
+      "Guardian Grarl",
+      "Reaper Scythe - Dreadscythe",
+      "Guardian Elma",
+      "Guardian Ceal",
+      "Guardian Baou",
+      "Guardian Kay'est",
+      "Guardian Tryce",
+      "Shooting Star Bow - Ceal",
+      "Gravity Axe - Grarl",
+      "Wicked-Breaking Flamberge - Baou",
+      "Rod of Silence - Kay'est",
+      "Twin Swords of Flashing light - Tryce",
+    ],
+  },
+  a_full_course_of_magic: {
+    name: "A Full Course of Magic",
+    description: "Nouvelles, Suship",
+    archetypes: ["Nouvelles", "Suship", "Recipe", "Burger"],
+    cards: [
+      "Instant Fusion",
+      "Angry Burger",
+      "Ready Fusion",
+      "Sea Monster of Theseus",
+      "Patissciel Couverture",
+      "Painful Decision",
+      "Voici la Carte (Today's Menu)",
+      "Concours de Cuisine (Culinary Confrontation)",
+      "Fusion Duplication",
+      "Number 50: Blackship of Corn",
+      "Manju of the Ten Thousand Hands",
+      "Monster Express",
+      "Xyz Align",
+      "Xyz Reborn",
+      "Painful Escape",
+      "Hungry Burger",
+      "Cattycorn",
+      "Sour Scheduling - Red Vinegar Vamoose",
+    ],
+  },
+  a_song_of_zephyr_and_petals: {
+    name: "A Song of Zephyr and Petals",
+    description: "Melodious, Windwitch",
+    archetypes: ["Melodious", "Windwitch"],
+    cards: [
+      "Brilliant Rose",
+      "Feedran, the Winds of Mischief",
+      "Fairy Wind",
+      "Lost Wind",
+      "Crystal Rose",
+      "Pianissimo",
+    ],
+  },
+  a_warrior_of_seething_anger: {
+    name: "A Warrior of Seething Anger",
+    description: "Kashtira",
+    archetypes: ["Kashtira"],
+    cards: [
+      "Macro Cosmos",
+      "Different Dimension Ground",
+      "Number 11: Big Eye",
+      "Red-Eyes Flare Metal Dragon",
+      "Dimensional Fissure",
+      "Replicard LAD",
+      "Additional Mirror Level 7",
+      "Pressured Planet Wraitsoth",
+      "Trivikarma",
+      "Number 28: Titanic Moth",
+      "Dark Armed, the Dragon of Annihilation",
+      "Infinitrack Mountain Smasher",
+      "Number 76: Harmonizer Gradielle",
+      "D.D.R. - Different Dimension Reincarnation",
+      "Xyz Block",
+      "Stall Turn",
+    ],
+  },
+};
+
+/**
+ * Custom / Individual Cards to add to the card pool
+ * Add your own custom card definitions here!
+ *
+ * Each card must follow this exact structure:
+ * {
+ *     id: Unique Number (e.g. 99999901),
+ *     name: "Card Name",
+ *     type: "Card Type (e.g. Effect Monster, Spell Card, Trap Card)",
+ *     desc: "Card text description",
+ *     archetype: "Optional Archetype Name (for Secret Pack filtering)",
+ *     md_rarity: "UR", // Rarity short code: "UR", "SR", "R", or "N"
+ *     card_images: [
+ *         {
+ *             image_url: "Full card image URL",
+ *             image_url_small: "Small card image URL for grid"
+ *         }
+ *     ]
+ * }
+ */
+
+/**
+ * Custom / Individual Cards to exclude / remove from all pack pools.
+ * Add card names (string) or card IDs (number) to filter them out of
+ * both the General Master Pool and Secret Packs.
+ *
+ * Example:
+ * const EXCLUDED_CARDS = [
+ *     "Jerry Beans Man", // Exclude Jerry Beans Man by name
+ *     101                // Exclude Ash Blossom by its ID
+ * ];
+ */
+const EXCLUDED_CARDS = [
+  // Add card names or card IDs here to exclude them from the simulator pools
+];

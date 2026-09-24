@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yu-Gi-Oh! Master Saga Pack Opener</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fullscreen Loading Overlay -->
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="loader-content">
+            <div class="puzzle-loader">
+                <div class="inner-triangle"></div>
+            </div>
+            <h2>LOADING CARD DATA</h2>
+            <p>Sourcing Master Duel cards from YGOPRODeck...</p>
+            <div class="progress-bar-container">
+                <div id="loading-progress" class="progress-bar"></div>
+            </div>
+            <p id="loading-status" class="loading-status">Connecting to database...</p>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="app-container">
+        <!-- Sidebar / Control Center -->
+        <aside class="control-panel">
+            <div class="logo-container">
+                <h1>MASTER SAGA</h1>
+                <div class="subtitle">PACK SIMULATOR</div>
+            </div>
+
+            <!-- Pack Configuration -->
+            <section class="panel-section">
+                <h3>SELECT PACK TYPE</h3>
+                <div id="pack-cards-list" class="pack-cards-list">
+                    <!-- Dynamic Pack Banners will be rendered here -->
+                </div>
+                <div id="secret-pack-info" class="pack-info-box hidden">
+                    <div class="info-label">Featured Archetypes:</div>
+                    <div id="featured-archetypes-list" class="archetype-tags"></div>
+                </div>
+            </section>
+
+            <!-- Pull Actions -->
+            <section class="panel-section actions-section">
+                <h3>SIMULATE PULLS</h3>
+                <div class="pull-buttons">
+                    <button id="pull-1-btn" class="pull-btn primary-btn">
+                        <span class="btn-text">OPEN 1 PACK</span>
+                        <span class="btn-cost">100 Gems</span>
+                    </button>
+                    <button id="pull-10-btn" class="pull-btn primary-btn gold-glow">
+                        <span class="btn-text">OPEN 10 PACKS</span>
+                        <span class="btn-cost">1,000 Gems</span>
+                    </button>
+                </div>
+
+                <!-- Pity Indicator -->
+                <div id="pity-indicator" class="pity-indicator no-pity">
+                    <div class="pity-icon">✦</div>
+                    <div class="pity-details">
+                        <span class="pity-title">UR PITY STATUS</span>
+                        <span id="pity-status-text" class="pity-status">INACTIVE</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Session Actions & Export -->
+            <section class="panel-section exports-section">
+                <h3>EXPORT & UTILITIES</h3>
+                <div class="export-buttons">
+                    <button id="export-ydk-btn" class="export-btn" disabled>
+                        <span>EXPORT .YDK</span>
+                    </button>
+                    <button id="export-txt-btn" class="export-btn" disabled>
+                        <span>EXPORT TEXT LIST</span>
+                    </button>
+                    <button id="reset-btn" class="export-btn danger-btn">
+                        <span>RESET SESSION</span>
+                    </button>
+                </div>
+            </section>
+        </aside>
+
+        <!-- Main Workspace Area -->
+        <main class="workspace">
+            <!-- Header Status -->
+            <header class="workspace-header">
+                <div class="status-indicator">
+                    <span class="pulse-dot"></span>
+                    <span id="active-status">Ready to duel</span>
+                </div>
+                <div id="global-counter" class="global-counter">Total Pulled: 0 Cards</div>
+            </header>
+
+            <!-- Active Pack Display -->
+            <div class="canvas-container">
+                <div id="results-header" class="results-header hidden">
+                    <h2 id="results-title">PULL RESULTS</h2>
+                    <div class="canvas-controls">
+                        <button id="reveal-all-btn" class="action-btn">REVEAL ALL</button>
+                    </div>
+                </div>
+
+                <!-- 10-Pack Navigation Tabs (Only active for 10-pack pulls) -->
+                <div id="pack-tabs" class="pack-tabs hidden"></div>
+
+                <!-- The Card Canvas Grid -->
+                <div id="card-grid" class="card-grid empty-grid">
+                    <div class="empty-state">
+                        <div class="empty-icon">🎴</div>
+                        <h2>No Packs Opened Yet</h2>
+                        <p>Select a pack type on the left and open packs to begin your Master Saga journey.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Side Draw / Log of Unlocked Secret Packs -->
+            <div class="high-rarity-drawer">
+                <div class="drawer-header">
+                    <h3>UNLOCKED SECRET PACKS</h3>
+                    <span id="unlocked-packs-count" class="highlight-count">0 packs</span>
+                </div>
+                <div id="secret-packs-log" class="highlights-log">
+                    <div class="log-empty">No packs opened yet.</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="toast hidden">Copied to clipboard!</div>
+
+    <!-- Configuration & Main JS -->
+    <script src="packs.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
