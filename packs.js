@@ -33,7 +33,7 @@
 const SECRET_PACKS = {
   cosmic_ocean: {
     name: "Treasures of the Cosmic Ocean",
-    description: "Icejade, Ghoti, Fish Support",
+    description: ["Icejade", "Ghoti", "Fish Support"],
     archetypes: ["Icejade", "Ghoti"],
     cards: [
       "Surface",
@@ -53,7 +53,7 @@ const SECRET_PACKS = {
   },
   supreme_strike: {
     name: "Supreme Strike",
-    description: "Mathmech, Cyberse slop",
+    description: ["Mathmech", "Cyberse Slop"],
     archetypes: ["Mathmech"],
     cards: [
       "DPH Gendamoore",
@@ -79,7 +79,7 @@ const SECRET_PACKS = {
   },
   echo_chamber_nation: {
     name: "Echo Chamber Nation",
-    description: "Dogmatika, Ritual Support",
+    description: ["Dogmatika", "Ritual Support"],
     archetypes: ["Dogmatika"],
     cards: [
       "The Fallen & the Virtuous",
@@ -95,7 +95,7 @@ const SECRET_PACKS = {
   },
   alba_abyss: {
     name: "Alba Abyss",
-    description: "Branded, Springans",
+    description: ["Branded", "Springans"],
     archetypes: ["Branded"],
     cards: [
       "fusion deployment",
@@ -120,7 +120,7 @@ const SECRET_PACKS = {
   },
   supernatural_elements: {
     name: "Supernatural Elements",
-    description: "Monarch, ElementSaber",
+    description: ["Monarch", "ElementSaber"],
     archetypes: ["Monarch", "Vassal", "Elemental Lord", "Elementsaber"],
     cards: [
       "Eidos the Underworld Squire",
@@ -146,7 +146,7 @@ const SECRET_PACKS = {
   },
   world_cloaked_in_magical_power: {
     name: "World Cloaked in Magical Power",
-    description: "Sacred Beasts Support, Yubel",
+    description: ["Sacred Beasts Support", "Yubel"],
     archetypes: [
       "Sacred Beast",
       "Yubel",
@@ -194,7 +194,7 @@ const SECRET_PACKS = {
   },
   neo_space_comrades: {
     name: "Neo Space Comrades",
-    description: "Elemental HERO",
+    description: ["Elemental HERO"],
     archetypes: ["Neo-Spacian", "Neos", "Neo Space"],
     cards: [
       "Cross Keeper",
@@ -221,7 +221,7 @@ const SECRET_PACKS = {
   },
   stardust_ties: {
     name: "Stardust Ties",
-    description: "Stardust, Synchron",
+    description: ["Stardust", "Synchron",],
     archetypes: ["Stardust", "Synchron"],
     cards: [
       "Shooting Quasar Dragon",
@@ -253,7 +253,7 @@ const SECRET_PACKS = {
   },
   pearlescent_cyber_dragons: {
     name: "Pearlescent Cyber Dragons",
-    description: "Cyber Dragon",
+    description: ["Cyber Dragon"],
     archetypes: ["Cyber Dragon", "Cyberdark", "Chimeratech"],
     cards: [
       "Limiter Removal",
@@ -272,7 +272,7 @@ const SECRET_PACKS = {
   },
   abyssal_underworld: {
     name: "Abyssal Underworld",
-    description: "Vendread, Skull Servant, Zombie Support",
+    description: ["Vendread", "Skull Servant", "Zombie Support"],
     archetypes: ["Vendread", "Wight", "Skull Servant"], // I promise this is necessary lmao
     cards: [
       "Dark Necromancer",
@@ -300,58 +300,53 @@ const SECRET_PACKS = {
   },
   dragonmaid_to_order: {
     name: "Dragonmaid-to-Order",
-    description: "Dragonmaid",
+    description: ["Dragonmaid"],
     archetypes: ["Dragonmaid"],
   },
   raging_thunder: {
     name: "Raging Thunder",
-    description: "Thunder Dragon",
+    description: ["Thunder Dragon"],
     archetypes: ["Thunder Dragon"],
   },
   fiendish_plaything: {
     name: "Fiendish Plaything",
-    description: "Frightfur, Fluffal, Edge Imp",
+    description: ["Fluffal"],
     archetypes: ["Frightfur", "Fluffal", "Edge Imp"],
   },
   toon_kingdom: {
     name: "Toon Kingdom",
-    description: "Toon",
+    description: ["Toon"],
     archetypes: ["Toon"],
   },
   nebula_cyclone: {
     name: "Nebula Cyclone",
-    description: "Galaxy-Eyes, Photon",
+    description: ["Galaxy-Eyes"],
     archetypes: ["Galaxy-Eyes", "Photon", "Tachyon", "Galaxy"],
   },
   shackles_of_smoldering_wrath: {
     name: "Shackles of Smoldering Wrath",
-    description: "Unchained, Fiend Support",
+    description: ["Unchained", "Fiend Support"],
     archetypes: ["Unchained"],
   },
   space_insurrection: {
     name: "Space Insurrection",
-    description: "Kozmo, Psychic/Machine",
+    description: ["Kozmo", "Psychic/Machine"],
     archetypes: ["Kozmo"],
-  },
-  solfachord_harmonics: {
-    name: "Solfachord Harmonics",
-    description: "Solfachord, Pendulum",
-    archetypes: ["Solfachord"],
   },
   one_turn_kill: {
     name: "One-Turn-Kill",
-    description: "Numeron, OTK Cards",
+    description: ["Numeron"],
     archetypes: ["Numeron"],
   },
   clash_of_ruins: {
     name: "Clash of Ruins",
-    description: "Ancient Gear, Machina",
+    description: ["Ancient Gear", "Machina"],
     archetypes: ["Ancient Gear", "Machina"],
   },
 
   a_dance_dedicated_to_the_Heavens: {
     name: "A Dance Dedicated to the Heavens",
-    description: "Mikanko, Guardian, Equip Support",
+    description: ["Mikanko", "Guardian", "Equip Support"],
     archetypes: ["Mikanko", "Bamboo Sword"],
     cards: [
       "Hidden Armory",
@@ -376,7 +371,7 @@ const SECRET_PACKS = {
   },
   a_full_course_of_magic: {
     name: "A Full Course of Magic",
-    description: "Nouvelles, Suship",
+    description: ["Nouvelles", "Suship"],
     archetypes: ["Nouvelles", "Suship", "Recipe", "Burger"],
     cards: [
       "Instant Fusion",
@@ -401,7 +396,7 @@ const SECRET_PACKS = {
   },
   a_song_of_zephyr_and_petals: {
     name: "A Song of Zephyr and Petals",
-    description: "Melodious, Windwitch",
+    description: ["Melodious", "Windwitch"],
     archetypes: ["Melodious", "Windwitch"],
     cards: [
       "Brilliant Rose",
@@ -414,7 +409,7 @@ const SECRET_PACKS = {
   },
   a_warrior_of_seething_anger: {
     name: "A Warrior of Seething Anger",
-    description: "Kashtira",
+    description: ["Kashtira"],
     archetypes: ["Kashtira"],
     cards: [
       "Macro Cosmos",
@@ -437,7 +432,7 @@ const SECRET_PACKS = {
   },
     advanced_warriors: { //This pack SUCKS
     name: "Advanced Warriors",
-    description: "Igknight, Majespecter, Dinomist, Amorphage",
+    description: ["Igknight", "Majespecter", "Dinomist", "Amorphage"],
     archetypes: ["Igknight", "Majespecter", "Dinomist", "Amorphage"],
     cards: [
       "Majester Paladin, the Ascending Dracoslayer",
@@ -479,7 +474,7 @@ const SECRET_PACKS = {
   },
   adventure_of_mystical_etchings: {
     name: "Adventure of Mystical Etchings",
-    description: "Generaider, Runick",
+    description: ["Generaider", "Runick"],
     archetypes: ["Generaider", "Runick"],
     cards: [
       "Nine-Lives Cat",
@@ -493,7 +488,7 @@ const SECRET_PACKS = {
   },
   agathokakologically_whispered_fates: {
     name: "Agathokakologically Whispered Fates",
-    description: "Vaalmonica, Majespecter",
+    description: ["Vaalmonica", "Majespecter"],
     archetypes: ["Vaalmonica", "Majespecter"],
     cards: [
        "Majesty Pegasus, the Dracoslayer",
@@ -517,13 +512,63 @@ const SECRET_PACKS = {
   },
   ai_omniscience: {
     name: "AI Omniscience",
-    description: "@Ignister",
+    description: ["@Ignister"],
     archetypes: ["@Ignister", "A.I."],
     cards: [
       "Firewall Saber Dragon",
       "Code Igniter",
       "Linkslayer",
       "Linguriboh",
+    ],
+  },
+  altered_heraldry: {
+    name: "Altered Heraldry",
+    description: ["Heraldic Beast", "Generic CXyz Monsters"],
+    archetypes: ["Heraldic", "Heraldry"],
+    cards: [
+      "Rank-Up-Magic Argent Chaos Force",
+      "Norito the Moral Leader",
+      "Skypalace Gangaridai",
+      "Marshalling Field",
+      "Fairy Cheer Girl",
+      "Mechquipped Angineer",
+      "CXyz Mechquipped Djinn Angeneral",
+      "CXyz Simon the Great Moral Leader",
+      "Comics Hero King Arthur",
+      "CXyz Comics Hero Legend Arthur",
+      "Battlecruiser Dianthus",
+      "CXyz Battleship Cherry Blossom",
+      "Resurgam Xyz",
+      "Number 92: Heart-eartH Dragon",
+      "Number 53: Heart-eartH",
+      "Coach King Giantrainer",
+      "CXyz Dark Fairy Cheer Girl",
+      "CXyz Coach Lord Ultimatrainer",
+      "Number C92: Heart-eartH Chaos Dragon",
+      "Garbage Ogre",
+      "Garbage Lord",
+    ],
+    exclude_cards: [
+      "Heraldic Beast Gryphon",
+      "Heraldic Beast Stad Whale",
+      "Number 69: Heraldry Crest - Shatter Stream",
+      "Number 69: Heraldry Crest - Dark Matter Demolition",
+      "Flash of Heraldry",
+    ]
+  },
+  artistic_angel: {
+    name: "Artistic Angel",
+    description: ["Weather Painter", "Solfachord"],
+    archetypes: ["The Weather", "Solfachord"],
+    cards: [
+      "Maple Maiden",
+      "Ret-time Reviver Emit-ter",
+      "Number 76: Harmonizer Gradielle",
+      "Cupid Volley",
+      "Cupid Dunk",
+      "Cupid Serve",
+      "Cupid Fore",
+      "Rain Bozu",
     ],
   },
 };

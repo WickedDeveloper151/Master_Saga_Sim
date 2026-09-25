@@ -310,7 +310,7 @@ function handlePackChange() {
         DOM.secretPackInfo.classList.remove("hidden");
         
         // Render tag pills for all featured archetypes inside the information banner
-        DOM.featuredArchetypesList.innerHTML = config.archetypes
+        DOM.featuredArchetypesList.innerHTML = config.description
             .map(arch => `<span class="tag">${arch}</span>`).join("");
             
         // Reset and populate active pool with card objects that correspond to featured archetypes
