@@ -144,7 +144,7 @@ const SECRET_PACKS = {
       "Granmarg the Rock Monarch",
     ],
   },
-  world_cloaked_in_magical_power: {
+  cloaked_world: {
     name: "World Cloaked in Magical Power",
     description: ["Sacred Beasts Support", "Yubel"],
     archetypes: [
@@ -251,7 +251,7 @@ const SECRET_PACKS = {
       "Converging Wishes",
     ],
   },
-  pearlescent_cyber_dragons: {
+  cyber_dragons: {
     name: "Pearlescent Cyber Dragons",
     description: ["Cyber Dragon"],
     archetypes: ["Cyber Dragon", "Cyberdark", "Chimeratech"],
@@ -298,30 +298,152 @@ const SECRET_PACKS = {
       "Tri-Wight",
     ],
   },
-  dragonmaid_to_order: {
-    name: "Dragonmaid-to-Order",
+  draconic_courtesy: {
+    name: "Draconic Courtesy",
     description: ["Dragonmaid"],
     archetypes: ["Dragonmaid"],
+    cards: [
+      "Sweet Roommaid",
+      "Borreload Furious Dragon",
+      "Khaos Starsource Dragon",
+      "Filia Regis",
+      "Fantastical Dragon Phantazmay",
+      "Aiza the Dragoness of Deranged Devotion",
+      "Light End Sublimation Dragon",
+      "Dark End Evaporation Dragon",
+      "Vulmina, Statue of the Sacred Dragon",
+      "Dragon's Mirror",
+      "Burning Dragon",
+      "Mana Dragon Zirnitron",
+      "Omni Dragon Brotaur",
+      "Feedran, the Winds of Mischief",
+      "Nowru Aries the Vernal Dragon",
+      "Divine Dragon Titanomakhia",
+      "World Legacy Guardragon",
+      "Castle of Dragon Souls",
+      "Guardragon Cataclysm",
+      "Divine Dragon Apocralyph",
+      "Curse of Dragonfire",
+      "Checksum Dragon",
+    ],
   },
-  raging_thunder: {
-    name: "Raging Thunder",
-    description: ["Thunder Dragon"],
-    archetypes: ["Thunder Dragon"],
+  roaring_thunder: {
+    name: "Roaring Thunder",
+    description: ["Thunder Dragon", "Watt"],
+    archetypes: ["Thunder Dragon", "Watt"],
+    cards: [
+      "Some Summer Summoner",
+      "Gigathunder Giclops",
+      "Judgement of Thunder",
+    ],
+    exclude_cards: [
+      "Wattwoodpecker",
+      "Wattsychic Fighter",
+      "Wattkid",
+      "Wattuna",
+      "Wattsychic Fighting Porter",
+      "Wattaildragon",
+      "Wattsquirrel",
+      "Wattkyuki",
+      "Wattkingdom",
+    ],
   },
-  fiendish_plaything: {
-    name: "Fiendish Plaything",
+  fiendish_playthings: {
+    name: "Fiendish Playthings",
     description: ["Fluffal"],
     archetypes: ["Frightfur", "Fluffal", "Edge Imp"],
+    cards: [ 
+    ],
+    exclude_cards: [
+      "Fluffal Crane",
+      "Frightfur Reborn",
+      "Fluffal Angel",
+      "Designer Frightfur",
+      "Edge Imp Cotton Eater",
+      "Frightfur Sanctuary",
+      "Fusion Fright Waltz",
+      "Designer Frightfur",
+    ],
   },
-  toon_kingdom: {
-    name: "Toon Kingdom",
-    description: ["Toon"],
+  toontastic: {
+    name: "Toontastic",
+    description: ["Toon", "Relinquished"],
     archetypes: ["Toon"],
+    cards: [
+      "Relinquished Anima",
+      "Millennium-Eyes Restrict",
+      "Thousand-Eyes Restrict",
+      "Relinquished Fusion",
+      "Millennium-Eyes Illusionist",
+      "Golden-Eyes Idol",
+      "Mimicat",
+      "Relinquished",
+      "Illusionist Faceless Magician",
+      "Black Illusion Ritual",
+    ],
+    exclude_cards: [
+      "Toon Alligator",
+      "Parrot Dragon",
+    ]
   },
   nebula_cyclone: {
     name: "Nebula Cyclone",
     description: ["Galaxy-Eyes"],
-    archetypes: ["Galaxy-Eyes", "Photon", "Tachyon", "Galaxy"],
+    archetypes: ["Photon", "Galaxy"],
+    cards: [
+      "Numbers Last Hope",
+      "Revelation of Hope",
+      "Numeron Creation",
+      "Galactikuriboh",
+      "Orbital 7",
+      "Lillybot",
+      "Accellight",
+      "Dimension Wanderer",
+
+    ],
+    exclude_cards: [
+      "Number C107: Neo Galaxy-Eyes Tachyon Dragon",
+      "Paladin of Photon Dragon",
+      "Galaxy Storm",
+      "Galaxy Satellite Dragon",
+      "Tachyon Spiral Galaxy",
+      "Galaxy Queen's Light",
+      "Neo Galaxy-Eyes Cipher Dragon",
+      "Galaxy Stealth Dragon",
+      "Number 83: Galaxy Queen",
+      "Galaxy Mirror Sage",
+      "Number 42: Galaxy Tomahawk",
+      "Galaxy Serpent",
+      "Galaxy-Eyes Tachyon Primal",
+      "Galaxy Worm",
+      "Superdimensional Robot Galaxy Destroyer",
+      "Galaxy-Eyes Cipher X Dragon",
+      "Galaxy-Eyes Cipher Blade Dragon",
+      "Number 107: Galaxy-Eyes Tachyon Dragon",
+      "Galaxy-Eyes Cipher Dragon",
+      "Galaxy Cyclone",
+      "Galaxy Wave",
+      "Lord of the Tachyon Galaxy",
+      "Photon Leo",
+      "Photon Pirate",
+      "Photon Circle",
+      "Photon Cerberus",
+      "Photon Caesar",
+      "Photon Slasher",
+      "Photon Sabre Tiger",
+      "Photon Booster",
+      "Photon Current",
+      "Photon Veil",
+      "Photon Strike Bounzer",
+      "Photon Papilloperative",
+      "Photon Lead",
+      "Photon Wyvern",
+      "Photon Chargeman",
+      "Photon Alexandra Queen",
+      "Photon Generator Unit",
+      "Eternal Bond",
+      "Cyber Laser Dragon",
+    ],
   },
   shackles_of_smoldering_wrath: {
     name: "Shackles of Smoldering Wrath",
@@ -344,7 +466,7 @@ const SECRET_PACKS = {
     archetypes: ["Ancient Gear", "Machina"],
   },
 
-  a_dance_dedicated_to_the_Heavens: {
+  dance_to_heavens: {
     name: "A Dance Dedicated to the Heavens",
     description: ["Mikanko", "Guardian", "Equip Support"],
     archetypes: ["Mikanko", "Bamboo Sword"],
@@ -369,7 +491,7 @@ const SECRET_PACKS = {
       "Twin Swords of Flashing light - Tryce",
     ],
   },
-  a_full_course_of_magic: {
+  full_course: {
     name: "A Full Course of Magic",
     description: ["Nouvelles", "Suship"],
     archetypes: ["Nouvelles", "Suship", "Recipe", "Burger"],
@@ -394,7 +516,7 @@ const SECRET_PACKS = {
       "Sour Scheduling - Red Vinegar Vamoose",
     ],
   },
-  a_song_of_zephyr_and_petals: {
+  zephyr_and_petals: {
     name: "A Song of Zephyr and Petals",
     description: ["Melodious", "Windwitch"],
     archetypes: ["Melodious", "Windwitch"],
@@ -407,7 +529,7 @@ const SECRET_PACKS = {
       "Pianissimo",
     ],
   },
-  a_warrior_of_seething_anger: {
+  seething_anger: {
     name: "A Warrior of Seething Anger",
     description: ["Kashtira"],
     archetypes: ["Kashtira"],
@@ -472,7 +594,7 @@ const SECRET_PACKS = {
 
     ],
   },
-  adventure_of_mystical_etchings: {
+  mystical_etchings: {
     name: "Adventure of Mystical Etchings",
     description: ["Generaider", "Runick"],
     archetypes: ["Generaider", "Runick"],
@@ -571,7 +693,7 @@ const SECRET_PACKS = {
       "Rain Bozu",
     ],
   },
-  astral_trinity_of_gods: {
+  astral_trinity: {
     name: "Astral Trinity of Gods",
     description: ["Nordic"],
     archetypes: ["Nordic", "Aesir"],
@@ -631,7 +753,7 @@ const SECRET_PACKS = {
 
     ],
   },
-  awakening_of_the_ancients: {
+  awakening_ancients: {
     name: "Awakening of the Ancients",
     description: ["Artifact", "Guardian"],
     archetypes: ["Artifact"],
@@ -667,7 +789,7 @@ const SECRET_PACKS = {
       "Artifact Failnaught",
     ],
   },
-  beastly_claws_of_terror: {
+  beastly_terror: {
     name: "Beastly Claws of Terror",
     description: ["Scareclaw"],
     archetypes: ["Scareclaw"],
@@ -689,7 +811,7 @@ const SECRET_PACKS = {
       "Clear New World"
     ],
   },
-  beasts_of_the_inferno: {
+  inferno_beasts: {
     name: "Beasts of the Inferno",
     description: ["Volcanic", "Hazy Flame"],
     archetypes: ["Volcanic", "Hazy", "Blaze Accelerator"],
@@ -719,7 +841,7 @@ const SECRET_PACKS = {
       "Blaze Cannon",
     ],
   },
-  beetle_troops_roll_out: {
+  beetle_troops: {
     name: "Beetle Troops Roll Out",
     description: ["Beetrooper", "Inzektor"],
     archetypes: ["Beetrooper", "Inzektor"],
@@ -853,7 +975,7 @@ const SECRET_PACKS = {
       "Rikka Princess",
     ],
   },
-  bonkers_bikers_wild_wheels: {
+  bonkers_bikers: {
     name: "Bonkers Bikers' Wild Wheels",
     description: ["Goblin Biker", "Wind-Up"],
     archetypes: ["Goblin Biker", "Wind-Up"],
@@ -865,7 +987,7 @@ const SECRET_PACKS = {
       "Good Goblin Housekeeping",
     ],
   },
-  bujins_vault_of_heaven: {
+  bujins_vault: {
     name: "Bujin's Vault of Heaven",
     description: ["Bujin"],
     archetypes: ["Bujin"],
@@ -914,6 +1036,11 @@ const SECRET_PACKS = {
 const EXCLUDED_CARDS = [
   // Add card names or card IDs here to exclude them from the simulator pools
   "Divine Dragon Token", 
+  "Photon Token",
+  "Needle Token",
+  "Ceremonial Token",
+  "Kagemusha Raccoon Token",
+  "Compass Token",
   // Banlist Start
   "Dimension Shifter", 
   "PSY-Framelord Omega", 
