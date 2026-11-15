@@ -1142,6 +1142,43 @@ const SECRET_PACKS = {
     "Drytron Meteonis DA Draconids",
   ],
 },
+ cell_a_corruption: {
+    name: "Cell \"A\" Corruption",
+    description: ["Alien"],
+    archetypes: ["Alien"],
+    cards: [
+      "Cosmic Slicer Zer'oll", 
+      "Cosmic Fortress Gol'gar", 
+      "Cosmic Horror Gangi'el", 
+      "\"A\" Cell Recombination Device", 
+      "Planet Pollutant Virus", 
+      "\"A\" Cell Scatter Burst", 
+      "\"A\" Cell Breeding Device", 
+      "Code A Ancient Ruins", 
+      "Flying Saucer Muusik'i", 
+      "Alien Infiltrator", 
+      "Alien Psychic", 
+      "Interplanetary Invader \"A\"", 
+      "Alien Shocktrooper", 
+      "Corruption Cell \"A\"", 
+      "Otherworld - The \"A\" Zone", 
+      "\"A\" Cell Incubator", 
+      "Mysterious Triangle", 
+      "Crop Circles", 
+      "Orbital Bombardment", 
+      "Brainwashing Beam", 
+      "Mass Hypnosis", 
+      "Cell Explosion Virus", 
+      "Detonator Circle \"A\"", 
+      "Interdimensional Warp", 
+      "Alien Brain"
+    ],
+  exclude_cards: [
+
+  ],
+},
+
+
 };
 
 /**
@@ -1297,4 +1334,5 @@ const EXCLUDED_CARDS = [
   "Ultimate Offering",
   "Vanity's Emptiness",
   // Banlist End
+  //
 ];
