@@ -221,7 +221,7 @@ const SECRET_PACKS = {
   },
   stardust_ties: {
     name: "Stardust Ties",
-    description: ["Stardust", "Synchron",],
+    description: ["Stardust", "Synchron"],
     archetypes: ["Stardust", "Synchron"],
     cards: [
       "Shooting Quasar Dragon",
@@ -292,11 +292,7 @@ const SECRET_PACKS = {
       "Zombie Power Struggle",
       "Return of the Zombies",
     ],
-    exclude_cards: [
-      "Flame Ghost",
-      "Zombie Warrior",
-      "Tri-Wight",
-    ],
+    exclude_cards: ["Flame Ghost", "Zombie Warrior", "Tri-Wight"],
   },
   draconic_courtesy: {
     name: "Draconic Courtesy",
@@ -352,8 +348,7 @@ const SECRET_PACKS = {
     name: "Fiendish Playthings",
     description: ["Fluffal"],
     archetypes: ["Frightfur", "Fluffal", "Edge Imp"],
-    cards: [ 
-    ],
+    cards: [],
     exclude_cards: [
       "Fluffal Crane",
       "Frightfur Reborn",
@@ -381,10 +376,7 @@ const SECRET_PACKS = {
       "Illusionist Faceless Magician",
       "Black Illusion Ritual",
     ],
-    exclude_cards: [
-      "Toon Alligator",
-      "Parrot Dragon",
-    ]
+    exclude_cards: ["Toon Alligator", "Parrot Dragon"],
   },
   nebula_cyclone: {
     name: "Nebula Cyclone",
@@ -399,7 +391,6 @@ const SECRET_PACKS = {
       "Lillybot",
       "Accellight",
       "Dimension Wanderer",
-
     ],
     exclude_cards: [
       "Number C107: Neo Galaxy-Eyes Tachyon Dragon",
@@ -459,9 +450,7 @@ const SECRET_PACKS = {
       "Abomination's Prison",
       "High Tide on Fire Island",
     ],
-    exclude_cards: [
-      "Cursed Fire King Doom Burst",
-    ]
+    exclude_cards: ["Cursed Fire King Doom Burst"],
   },
   galaxy_war: {
     name: "Galaxy War",
@@ -521,23 +510,14 @@ const SECRET_PACKS = {
       "Number 84: Pain Gainer",
       "Number 70: Malevolent Sin",
     ],
-    exclude_cards: [
-      "Numeron Creation",
-      "Rank-Down-Magic Numeron Fall",
-    ],
+    exclude_cards: ["Numeron Creation", "Rank-Down-Magic Numeron Fall"],
   },
   gargantuan_gears: {
     name: "Gargantuan Gears",
     description: ["Ancient Gear"],
     archetypes: ["Ancient Gear"],
-    cards: [
-      "Geartown",
-      "Cross-Dimensional Duel",
-      "Spell Gear",
-    ],
-    exclude_cards: [
-      "Toon Ancient Gear Golem",
-    ],
+    cards: ["Geartown", "Cross-Dimensional Duel", "Spell Gear"],
+    exclude_cards: ["Toon Ancient Gear Golem"],
   },
 
   dance_to_heavens: {
@@ -626,7 +606,8 @@ const SECRET_PACKS = {
       "Stall Turn",
     ],
   },
-    advanced_warriors: { //This pack SUCKS
+  advanced_warriors: {
+    //This pack SUCKS
     name: "Advanced Warriors",
     description: ["Igknight", "Majespecter", "Dinomist", "Amorphage"],
     archetypes: ["Igknight", "Majespecter", "Dinomist", "Amorphage"],
@@ -665,7 +646,6 @@ const SECRET_PACKS = {
       "Amorphage Lysis",
       "Amorphage Pride",
       "Amorphage Greed",
-
     ],
   },
   mystical_etchings: {
@@ -687,16 +667,16 @@ const SECRET_PACKS = {
     description: ["Vaalmonica", "Majespecter"],
     archetypes: ["Vaalmonica", "Majespecter"],
     cards: [
-       "Majesty Pegasus, the Dracoslayer",
-       "Lightning Chidori",
-       "Protecting Spirit Loagaeth",
-       "Stained Glass of Light & Dark",
-       "Ebon Sun",
-       "Spiritual Wind Art - Miyabi",
-       "Sargasso the D.D. Battlefield",
-       "Gingerbread House",
-       "Summon Storm",
-       "Loop of Destruction",
+      "Majesty Pegasus, the Dracoslayer",
+      "Lightning Chidori",
+      "Protecting Spirit Loagaeth",
+      "Stained Glass of Light & Dark",
+      "Ebon Sun",
+      "Spiritual Wind Art - Miyabi",
+      "Sargasso the D.D. Battlefield",
+      "Gingerbread House",
+      "Summon Storm",
+      "Loop of Destruction",
     ],
     exclude_cards: [
       "Majespecter Supercell",
@@ -824,7 +804,6 @@ const SECRET_PACKS = {
       "Original Sinful Spoils - Snake-Eye",
       "The Hallowed Azamina",
       "Deception of the Sinful Spoils",
-
     ],
   },
   awakening_ancients: {
@@ -858,10 +837,7 @@ const SECRET_PACKS = {
       "Twin Swords of Flashing Light - Tryce",
       "Guarded Treasure",
     ],
-    exclude_cards: [
-      "Artifact Labrys",
-      "Artifact Failnaught",
-    ],
+    exclude_cards: ["Artifact Labrys", "Artifact Failnaught"],
   },
   beastly_terror: {
     name: "Beastly Claws of Terror",
@@ -882,7 +858,7 @@ const SECRET_PACKS = {
       "Visas Starfrost",
       "Book of Eclipse",
       "Book of Lunar Eclipse",
-      "Clear New World"
+      "Clear New World",
     ],
   },
   inferno_beasts: {
@@ -911,9 +887,7 @@ const SECRET_PACKS = {
       "Wild Fire",
       "Firewall",
     ],
-    exclude_cards: [
-      "Blaze Cannon",
-    ],
+    exclude_cards: ["Blaze Cannon"],
   },
   beetle_troops: {
     name: "Beetle Troops Roll Out",
@@ -931,8 +905,7 @@ const SECRET_PACKS = {
       "Resonance Insect",
       "Variable Form",
     ],
-    exclude_cards:
-    [
+    exclude_cards: [
       "Beetrooper Fly & Sting",
       "Heavy Beetrooper Mighty Neptune",
       "Beetrooper Assault Roller",
@@ -967,10 +940,7 @@ const SECRET_PACKS = {
     name: "Blazing Fortitude",
     description: ["Salamangreat"],
     archetypes: ["Salamangreat"],
-    cards: [
-      "Code of Soul",
-      "Phoenix Gearblade",
-    ],
+    cards: ["Code of Soul", "Phoenix Gearblade"],
   },
   blazing_vitality: {
     name: "Blazing Vitality",
@@ -994,8 +964,8 @@ const SECRET_PACKS = {
       "Dragon Nails",
       "Magnum Shield",
       "Gearbreed",
-      "\"Infernoble Arms - Durendal\"",
-      "\"Infernoble Arms - Joyeuse\"",
+      '"Infernoble Arms - Durendal"',
+      '"Infernoble Arms - Joyeuse"',
       "Rare Metalmorph",
       "Red-Eyes Black Metal Dragon",
       "Zoa the Fiendish Beast",
@@ -1042,12 +1012,9 @@ const SECRET_PACKS = {
       "Botanical Girl",
       "Talaya, Princess of Cherry Blossoms",
       "Mariña, Princess of Sunflowers",
-      "Chirubimé, Princess of Autumn Leaves"
+      "Chirubimé, Princess of Autumn Leaves",
     ],
-    exclude_cards: [
-      "Rikka Konkon",
-      "Rikka Princess",
-    ],
+    exclude_cards: ["Rikka Konkon", "Rikka Princess"],
   },
   bonkers_bikers: {
     name: "Bonkers Bikers' Wild Wheels",
@@ -1065,14 +1032,9 @@ const SECRET_PACKS = {
     name: "Bujin's Vault of Heaven",
     description: ["Bujin"],
     archetypes: ["Bujin"],
-    cards: [
-    ],
-  exclude_cards: [
-    "Bujin Hiruko",
-    "Bujin Hirume",
-
-  ],
-},
+    cards: [],
+    exclude_cards: ["Bujin Hiruko", "Bujin Hirume"],
+  },
   curtain_call: {
     name: "Captivating Curtain Call",
     description: ["Performapal"],
@@ -1119,9 +1081,8 @@ const SECRET_PACKS = {
       "Performapal Pinch Helper",
       "Smile Potion",
     ],
-  exclude_cards: [
-  ],
-},
+    exclude_cards: [],
+  },
   dragon_and_bear: {
     name: "Celestial Dragon and Bear",
     description: ["Drytron", "Ursarctic"],
@@ -1131,54 +1092,128 @@ const SECRET_PACKS = {
       "Hypernova Burst",
       "Born From Draconis",
     ],
-  exclude_cards: [
-    "Ultimate Bright Knight Ursatron Alpha",
-    "Ursarctic Drytron",
-    "Ultimate Flagship Ursatron",
-    "Ursarctic Polar Star",
-    "Ursarctic Radiation",
-    "Meteoroa Drytron",
-    "Drytron Nu II",
-    "Drytron Meteonis DA Draconids",
-  ],
-},
- cell_a_corruption: {
-    name: "Cell \"A\" Corruption",
+    exclude_cards: [
+      "Ultimate Bright Knight Ursatron Alpha",
+      "Ursarctic Drytron",
+      "Ultimate Flagship Ursatron",
+      "Ursarctic Polar Star",
+      "Ursarctic Radiation",
+      "Meteoroa Drytron",
+      "Drytron Nu II",
+      "Drytron Meteonis DA Draconids",
+    ],
+  },
+  cell_a_corruption: {
+    name: 'Cell "A" Corruption',
     description: ["Alien"],
     archetypes: ["Alien"],
     cards: [
-      "Cosmic Slicer Zer'oll", 
-      "Cosmic Fortress Gol'gar", 
-      "Cosmic Horror Gangi'el", 
-      "\"A\" Cell Recombination Device", 
-      "Planet Pollutant Virus", 
-      "\"A\" Cell Scatter Burst", 
-      "\"A\" Cell Breeding Device", 
-      "Code A Ancient Ruins", 
-      "Flying Saucer Muusik'i", 
-      "Alien Infiltrator", 
-      "Alien Psychic", 
-      "Interplanetary Invader \"A\"", 
-      "Alien Shocktrooper", 
-      "Corruption Cell \"A\"", 
-      "Otherworld - The \"A\" Zone", 
-      "\"A\" Cell Incubator", 
-      "Mysterious Triangle", 
-      "Crop Circles", 
-      "Orbital Bombardment", 
-      "Brainwashing Beam", 
-      "Mass Hypnosis", 
-      "Cell Explosion Virus", 
-      "Detonator Circle \"A\"", 
-      "Interdimensional Warp", 
-      "Alien Brain"
+      "Cosmic Slicer Zer'oll",
+      "Cosmic Fortress Gol'gar",
+      "Cosmic Horror Gangi'el",
+      '"A" Cell Recombination Device',
+      "Planet Pollutant Virus",
+      '"A" Cell Scatter Burst',
+      '"A" Cell Breeding Device',
+      "Code A Ancient Ruins",
+      "Flying Saucer Muusik'i",
+      "Alien Infiltrator",
+      "Alien Psychic",
+      'Interplanetary Invader "A"',
+      "Alien Shocktrooper",
+      'Corruption Cell "A"',
+      'Otherworld - The "A" Zone',
+      '"A" Cell Incubator',
+      "Mysterious Triangle",
+      "Crop Circles",
+      "Orbital Bombardment",
+      "Brainwashing Beam",
+      "Mass Hypnosis",
+      "Cell Explosion Virus",
+      'Detonator Circle "A"',
+      "Interdimensional Warp",
+      "Alien Brain",
     ],
-  exclude_cards: [
-
-  ],
-},
-
-
+    exclude_cards: [],
+  },
+  Champions_of_Hope: {
+    name: "Champions of Hope",
+    description: ["ZS", "ZW", "Utopia"],
+    archetypes: ["ZS", "ZW"],
+    cards: [
+      "Number 39: Utopia Rising",
+      "Full Armored Utopic Ray Lancer",
+      "Number 39: Utopia",
+      "Number S39: Utopia the Lightning",
+      "Number F0: Utopic Draco Future",
+      "Ultimate Dragonic Utopia Ray",
+      "Number 99: Utopia Dragonar",
+      "Zexal Construction",
+      "Number F0: Utopic Future",
+      "Number F0: Utopic Future Slash",
+      "Number 39: Utopia Double",
+      "Xyz Change Tactics",
+      "Rank-Up-Magic Zexal Force",
+      "Hyper Rank-Up-Magic Utopiforce",
+      "Halfway to Forever",
+      "Number C39: Utopia Ray V",
+      "Rank-Up-Magic Limited Barian's Force",
+      "Shining Hope Road",
+      "Light Wing Shield",
+      "Zexal Entrust",
+      "Double or Nothing!",
+      "Rising Sun Slash",
+      "Shining Draw",
+      "Future Drive",
+      "Zexal Alliance",
+    ],
+    exclude_cards: [
+      "Cyber Dragon Zwei",
+      "Schwarzschild Infinity Dragon",
+      "Buzzsaw Shark",
+    ],
+  },
+  Champions_of_Salvation: {
+    name: "Champions of Salvation",
+    description: ["Stellarknight"],
+    archetypes: ["Constellar", "Satellarknight", "Stellarknight", "Tellarknight"],
+    cards: [
+      "Constellar Star Cradle",
+      "Constellar Tellarknights",
+      "Constellar Tempest",
+      "Constellar Virgo",
+      "Constellar Zubeneschamali",
+      "Darktellarknight Batlamyus",
+      "Exstellarknight Constellar Ptolemy ?7",
+      "Hexatellarknight",
+      "Satellarknight Alsahm",
+      "Satellarknight Altair",
+      "Satellarknight Betelgeuse",
+      "Satellarknight Capella",
+      "Satellarknight Deneb",
+      "Satellarknight Procyon",
+      "Satellarknight Sirius",
+      "Satellarknight Skybridge",
+      "Satellarknight Unukalhai",
+      "Satellarknight Vega",
+      "Stellarknight Alpha",
+      "Stellarknight Constellar Diamond",
+      "Stellarknight Delteros",
+      "Stellarknight Triverr",
+      "Stellarnova Alpha",
+      "Stellarnova Binding",
+      "Stellarnova Wave",
+      "Tellarknight Altairan",
+      "Tellarknight Constellar Caduceus",
+      "Tellarknight Constellar Delteros",
+      "Tellarknight Cygnian",
+      "Tellarknight Genesis",
+    ],
+    exclude_cards: [
+      "Stellarknight Zefraxciton",
+  
+    ],
+  },
 };
 
 /**
@@ -1215,16 +1250,16 @@ const SECRET_PACKS = {
  */
 const EXCLUDED_CARDS = [
   // Add card names or card IDs here to exclude them from the simulator pools
-  "Divine Dragon Token", 
+  "Divine Dragon Token",
   "Photon Token",
   "Needle Token",
   "Ceremonial Token",
   "Kagemusha Raccoon Token",
   "Compass Token",
   // Banlist Start
-  "Dimension Shifter", 
-  "PSY-Framelord Omega", 
-  "Synchro Overtake", 
+  "Dimension Shifter",
+  "PSY-Framelord Omega",
+  "Synchro Overtake",
   "Abyss Dweller",
   "Agido the Ancient Sentinel",
   "Amazoness Archer",
